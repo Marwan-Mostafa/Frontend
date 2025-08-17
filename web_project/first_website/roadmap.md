@@ -1,4 +1,4 @@
-<!-- Structure of the project
+# Structure of the proejct
 
 ├── 1. Home Page
 │   ├── index.html
@@ -15,4 +15,4 @@
 ├── 2. Style Sheet
 |   ├── style.css
 |
-│-->
+│
