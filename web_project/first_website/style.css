@@ -1,32 +1,93 @@
-@import url('http://fonts.googleapis.com/css?family=poppins:20');
-body
-{
-    margin: 50px;
-    padding: 50px;
-    font-family: 'poppins', sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    color: #333;
 }
-.clients-section {
-    border-top: 2px solid #aaa;
-    border-bottom: 2px solid #aaa;
-    padding: 20px;
-    margin: 20px 0;
-  }
-  
-  .clients-section h2 {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .clients {
+nav ul {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 20px;
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+main {
+    max-width: 900px;
+    margin:auto;
+    padding: 40px 20px;
+}
+/* This for Responsive on the Mobile Device */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    main {
+        padding: 20px 10px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+section {
+    background: #fff;
+    margin: 40px auto;
+    padding: 32px 24px;
+    border-radius: 8px;
+    max-width: 900px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+#about h2,
+#contact h2 {
+    color: #0077cc;
+    margin-bottom: 14px;
+}
+#about p {
+    font-size: 1.18rem;
+    line-height: 1.6;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+#contact label {
+    font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    resize: vertical;
+}
+#contact button {
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: not-allowed; 
+}
+#contact a {
+    color: #0077cc;
+    text-decoration: underline;
+}
+/* Responsive Adjustments  */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    padding-left: 0;
   }
-  
-  .clients img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border: 2px solid #000; /* اختياري لو عايز إطار حول الصورة */
+  nav li {
+    margin-bottom: 10px;
   }
-  
+  main {
+    padding: 20px 12px;
+  }
+}
