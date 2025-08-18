@@ -6,13 +6,37 @@ body {
 }
 nav ul {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    background-color: #3498db;
     list-style-type: none;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px 20px;
 }
 nav a {
     text-decoration: none;
-    color: #0077cc;
+    color: white;
+    position: relative;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: #f0f0f1;
+  transition: width 0.3s ease;
+}
+
+a:hover {
+  color: #00dd34;
+}
+
+a:hover::after {
+  width: 100%;
 }
 main {
     max-width: 900px;
