@@ -1,7 +1,8 @@
 # ☕ Coffee Masters
 
-A simple, elegant coffee ordering web page built with **HTML5** and **CSS3**.  
-This project demonstrates semantic HTML structure, form handling, and clean design principles.
+A simple layout, elegant coffee ordering web page built with **HTML5** and **CSS3**.  
+This project demonstrates semantic HTML structure, form handling, and clean design principles
+and uses some features of the CSS like Grid.
 
 ---
 
@@ -11,5 +12,5 @@ This project demonstrates semantic HTML structure, form handling, and clean desi
 - 💳 **Payment Section** – Includes user input fields for name, card number, and CCV.  
 - 📊 **Order Summary** – Shows subtotal, tax, and final total dynamically (currently static values).
 
-Gmail: marwan.mf.tech@gmail.com
-LinkedIn: https://www.linkedin.com/in/marwanmostafa1
+Gmail: marwan.mf.tech@gmail.com .
+LinkedIn: https://www.linkedin.com/in/marwanmostafa1 .
