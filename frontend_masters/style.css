@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  font-family: 'Open Sans', sans-serif;
+}
+.main-nav {
+    background-color: rgb(67 40 28);
+    color: #fbf2c0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    padding: 2px;
+}
+.logo {
+    height: 25px;
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+}
+.page {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  width: 100%;
+  max-width: 2000px;
+  margin: 40px auto 0 auto;
+  padding: 0 1.5%;
+  grid-template-areas:
+    "order payment"
+    "total total";
+  grid-template-columns: 1fr 1fr;
+}
+.box {
+  background-color: #eee1d5;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.12);
+  padding: 20px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.box-title {
+  text-transform: uppercase;
+  color: #885a2d;
+  font-weight: normal;
+  font-size: 15px;
+  margin: 0 0 25px 0;
+}
+.order {
+  grid-area: order;
+}
+.payment {
+  grid-area: payment;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.total {
+  grid-area: total;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  border-bottom: 2px solid #ddb892;
+  display: grid;
+  padding: 15px 0 10px 0;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: 
+    "quantity title price"
+    "quantity options price";
+  row-gap: 4px;
+}
+.item:last-child {
+  border-bottom: none;
+}
+.item-quantity {
+  grid-area: quantity;
+  font-size: 18px;
+  font-weight: 100;
+  align-self: start;
+  margin-top: 2px;
+}
+.item-title {
+  grid-area: title;
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 0;
+}
+.item-price {
+  grid-area: price;
+  font-weight: bold;
+  font-size: 16px;
+  align-self: start;
+  text-align: center;
+}
+.item-options-list {
+  grid-area: options;
+  color: #b08968;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.item-option {
+  margin-bottom: 3px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.user-input {
+  background-color: rgba(0,0,0,0);
+  border: 2px #885a2d solid;
+  padding: 12px 20px;
+  border-radius: 100px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.user-input-label {
+  color: #885a2d;
+  background-color: #eee1d5;
+  font-size: 13px;
+  position: absolute;
+  left: 22px;
+  top: -11px;
+  padding: 0 6px;
+  z-index: 2;
+}
+
+.short-input {
+  max-width: 200px;
+}
+
+.short {
+  max-width: 240px;
+}
+
+.totals-table {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+  color: #43281c;
+  font-size: 18px;
+}
+
+.totals-table td {
+  padding: 10px;
+}
+
+.totals-table td:last-child {
+  text-align: right;
+}
+
+.final-totals td {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.checkout {
+  background-color: #deb993;
+  border: none;
+  padding: 16px 30px;
+  width: 97%;
+  border-radius: 100px;
+  font-size: 18px;
+  color: #43281c;
+  font-weight: bold;
+  margin: 0 1.5%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.checkout:hover {
+  background-color: #caa77d;
+}
+
+@media (max-width: 1150px) {
+  .page {
+    grid-template-areas:
+      "order"
+      "payment"
+      "total";
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
