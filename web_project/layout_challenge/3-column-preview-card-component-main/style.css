@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    font-family: 'Oswald', 'Bebas Neue', Arial, sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+.container{
+    display: flex;
+    margin: 70px auto;
+    text-align: left;
+}
+div {
+    padding: 30px;
+    width: 800px;
+    height: 350px;
+}
+.first {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.second {
+    background-color: hsl(184, 100%, 22%);
+}
+.third {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+}
+h1{
+    font-family: 'Oswald', 'Bebas Neue', Arial, sans-serif;
+    color: white;
+    font-weight: 100;
+    margin-top: 15px;
+}
+p{
+    font-family:'Lexend Deca', Arial, sans-serif;
+}
+button {
+    margin-top: 40px;
+    width: 120px;
+    height: 35px;
+    font-family: 'Lexend Deca', Arial, sans-serif;
+    border-radius: 15px;
+    border-color: transparent;
+}
+.btn-1{
+    color: hsl(31, 77%, 52%);
+}
+.btn-2{
+    color: hsl(184, 100%, 22%)
+}
+.btn-3{
+    margin-top: 20px;
+    color: hsl(179, 100%, 13%)
+}
