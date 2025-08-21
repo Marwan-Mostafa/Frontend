@@ -50,8 +50,9 @@ button:hover {
         "footer footer";
     height: 100vh;
     gap: 10px;
+    margin-bottom: 50px;
 }
 header {grid-area: header; background: #3498db; color: white;}
 aside {grid-area: sidebar; background: #2ecc71; color: white;}
-main {grid-area: main; background: #ecf0f1; color: white;}
+main {grid-area: main; background: #217b92; color: white;}
 header {grid-area: footer; background: #34495e; color: white;}
