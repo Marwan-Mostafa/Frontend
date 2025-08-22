@@ -22,7 +22,6 @@ A modern and responsive **Calculator application** inspired by the native iOS de
 * **CSS3** for styling and UI design
 * **JavaScript (ES6)** for application logic
 
-  <img width="549" height="762" alt="image" src="https://github.com/user-attachments/assets/8410afcc-2ebf-430c-b20c-ae82126feecc" />
+  <img width="549" height="762" alt="image" src="https://github.com/user-attachments/assets/8410afcc-2ebf-430c-b20c-ae82126feecc"/>
 
 
-هل تحب أوفرلك نسخة **قصيرة ومختصرة** (لـ GitHub) ونسخة **موسعة وطويلة** (لـ LinkedIn) بحيث تبقى مناسبة لكل منصة؟
