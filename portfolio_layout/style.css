@@ -22,7 +22,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 10%;
+  padding: 3px 9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,10 +32,11 @@ header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 .logo {
-  font-size: 25px;
+  font-size:30px;
+  font-family: "Roboto Condensed";
   font-weight: 700;
   color: var(--neutral-light);
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 2px;
   cursor: pointer;
   transition: color 0.3s ease;
