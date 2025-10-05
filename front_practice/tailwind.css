@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.art {
+  @apply inline-flex items-center px-4 py-2 rounded-md text-white bg-indigo-600 hover:bg-indigo-700;
+}

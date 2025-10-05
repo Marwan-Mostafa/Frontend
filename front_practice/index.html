@@ -3,65 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Practices</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="tailwind.css">
+        <title>Website | Practice</title>
     </head>
-    <body>
+    <body class="flex justify-center bg-sky-500 items-center h-[100vh]">
+                <!-- Backdrop -->
+        <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <!-- Modal panel -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg max-w-lg w-full mx-4 p-6 shadow-lg" role="document">
+            <header class="flex items-start justify-between">
+            <h2 id="modal-title" class="text-xl font-semibold">Modal title</h2>
+            <button aria-label="Close" class="ml-4 text-gray-500 hover:text-gray-700">✕</button>
+            </header>
+            <div class="mt-4">
+            <p class="text-gray-700 dark:text-gray-300">Modal body content</p>
+            </div>
+            <footer class="mt-6 flex justify-end gap-3">
+            <button class="px-4 py-2 rounded bg-gray-200">Cancel</button>
+            <button class="px-4 py-2 rounded bg-indigo-600 text-white">Confirm</button>
+            </footer>
         </div>
-            <nav class="navbar">
-                    <a href="#">Home</a>
-                    <a href="front.html">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Services</a>
-            </nav>
-            <div class="products">
-                <div class="card">Product one</div>
-                <div class="card">Product two</div>
-                <div class="card">Product three</div>
-                <div class="card">Product four</div>
-            </div>
-            <div class="btn-group">
-                <button>Save</button>
-                <button>Edit</button>
-                <button>Delete</button>
-            </div>
-            
-             <div class="dashboard">
-                <header>Header</header>
-                <aside>SideBar</aside>
-                <main>Main Content</main>
-                <footer>Footer</footer>
-             </div>
-              <div class="calc">
-            <section class="screen"></section>
-            <section class="calc-buttons">
-                <div class="calc-button-row">
-                    <button class="clac-button double">C</button>
-                    <button class="clac-button">←</button>
-                    <button class="clac-button">÷</button>
-                </div>
-                <div class="calc-button-row">
-                    <button class="clac-button">7</button>
-                    <button class="clac-button">8</button>
-                    <button class="clac-button">9</button>
-                    <button class="clac-button">x</button>
-                </div>
-                <div class="calc-button-row">
-                    <button class="clac-button">4</button>
-                    <button class="clac-button">5</button>
-                    <button class="clac-button">6</button>
-                    <button class="clac-button">-</button>
-                </div>
-                <div class="calc-button-row">
-                    <button class="calc-button">1</button>
-                    <button class="calc-button">2</button>
-                    <button class="calc-button">3</button>
-                    <button class="calc-button">+</button>
-                </div>
-                <div class="clac-button-row">
-                    <button class="calc-button triple">0</button>
-                    <button class="calc-button">=</button>
-                </div>
-            </section>
+        </div>
+
     </body>
 </html>
