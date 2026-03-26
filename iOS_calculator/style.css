@@ -1,14 +1,15 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   padding: 0;
   margin: 0;
+}
+body{
+  background-color: black;
 }
 
 .calc {
   width: 400px;
+  height: 400px;
   background-color: white;
   color: black;
   position: relative;
@@ -22,7 +23,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   text-align: right;
   padding: 20px 5px;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .calc-button {
